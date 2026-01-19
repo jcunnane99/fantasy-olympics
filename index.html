@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fantasy Olympics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Fantasy Olympics</h1>
+      <nav class="nav">
+        <a class="active" href="index.html">Rules</a>
+        <a href="draft.html">Draft</a>
+        <a href="scoring.html">Scoring</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>How the game works</h2>
+      <ol>
+        <li><strong>Draft</strong>: Each participant drafts athletes/countries/events (your choice).</li>
+        <li><strong>Scoring</strong>: Points are awarded for medals/results (see scoring table below).</li>
+        <li><strong>Winner</strong>: Highest total points at the end wins.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Scoring system</h2>
+      <p>Edit these in <code>data.js</code> if you want different values.</p>
+      <div id="scoringRules"></div>
+    </section>
+
+    <section class="card">
+      <h2>Notes / tie-breakers</h2>
+      <ul>
+        <li>Tie-breaker idea: most golds, then most silvers, then most bronzes.</li>
+        <li>Alternative: head-to-head “event wins” as tie-breaker.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>Fantasy Olympics • Static site</small>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
