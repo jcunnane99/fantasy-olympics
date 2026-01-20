@@ -6,33 +6,38 @@
   <title>Fantasy Olympics • Draft</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
       <h1>Fantasy Olympics</h1>
-     <nav class="nav">
-  <a href="index.html">Rules</a>
-  <a href="events.html">Events</a>
-  <a class="active" href="draft.html">Draft</a>
-  <a href="scoring.html">Scoring</a>
-</nav>
+      <nav class="nav">
+        <a href="index.html">Rules</a>
+        <a href="events.html">Events</a>
+        <a class="active" href="draft.html">Draft</a>
+        <a href="scoring.html">Scoring</a>
+      </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
-      <h2>Draft results</h2>
-      <p>Update picks in <code>data.js</code>.</p>
+      <h2>Draft Results</h2>
+      <p>
+        Below are the results of the Fantasy Olympics draft.
+        Draft selections are listed by participant in alphabetical order.
+      </p>
       <div id="draftResults"></div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <small>Fantasy Olympics • Draft</small>
+      <small>Fantasy Olympics • Draft Board</small>
     </div>
   </footer>
 
+  <!-- Data + rendering scripts -->
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
