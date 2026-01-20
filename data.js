@@ -1,42 +1,43 @@
-// Edit this file as the Olympics progress.
-// Keep it simple: participants, draft picks, and scoring entries.
+// Fantasy Olympics Game Data
+// Populate participants, draft picks, and scoring entries as the game progresses
 
 const GAME = {
   title: "Fantasy Olympics",
+
+  // Scoring rules
   scoringRules: [
-    { label: "Gold", points: 5 },
-    { label: "Silver", points: 3 },
-    { label: "Bronze", points: 1 },
-    // Example bonus category (optional):
-    // { label: "World Record", points: 2 },
+    { label: "Gold", points: 100 },
+    { label: "Silver", points: 75 },
+    { label: "Bronze", points: 50 }
+    // Optional bonus categories can be added here
+    // { label: "Olympic Record", points: 15 },
+    // { label: "World Record", points: 25 }
   ],
 
+  // Add team / participant names here
   participants: [
-    "Joe",
-    "Alex",
-    "Sam",
-    "Taylor",
-    "Jordan",
-    "Casey",
+    // Example:
+    // "Team Example"
   ],
 
-  // Draft picks: you decide what a "pick" is (athlete, country, event, team).
-  // Keep as text for flexibility.
+  // Draft selections by participant
+  // Format:
+  // "Team Name": ["Pick 1", "Pick 2"]
   draft: {
-    "Joe":    ["USA (overall)", "Mikaela Shiffrin", "Men's Hockey - Canada"],
-    "Alex":   ["Norway (overall)", "Women's Figure Skating - Kaori Sakamoto"],
-    "Sam":    ["Canada (overall)"],
-    "Taylor": ["Japan (overall)"],
-    "Jordan": ["Germany (overall)"],
-    "Casey":  ["Sweden (overall)"],
+    // Example:
+    // "Team Example": []
   },
 
-  // Scoring entries: each entry gives points to ONE participant.
-  // Add one row per medal/result as they happen.
+  // Scoring log
+  // Add entries as medals/results occur
   scoringEntries: [
-    // Example rows (delete these and add real ones later):
-    { date: "2026-02-06", participant: "Joe",   category: "Gold",   event: "Alpine Skiing - Example Event", notes: "" },
-    { date: "2026-02-06", participant: "Alex",  category: "Silver", event: "Biathlon - Example Event",     notes: "" },
-    { date: "2026-02-07", participant: "Joe",   category: "Bronze", event: "Ski Jump - Example Event",     notes: "" },
+    // Example:
+    // {
+    //   date: "2026-02-06",
+    //   participant: "Team Example",
+    //   category: "Gold",
+    //   event: "Men's Downhill Skiing",
+    //   notes: ""
+    // }
   ]
 };
