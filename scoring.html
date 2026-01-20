@@ -10,44 +10,49 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Fantasy Olympics</h1>
+      <div class="brand-row">
+        <div>
+          <h1>Fantasy Olympics</h1>
+          <div class="subhead">Rules • Events • Draft • Live Scoring</div>
+        </div>
+      </div>
+
       <nav class="nav">
         <a href="index.html">Rules</a>
         <a href="events.html">Events</a>
         <a href="draft.html">Draft</a>
         <a class="active" href="scoring.html">Scoring</a>
       </nav>
+
+      <div class="banner-wrap">
+        <img class="banner-img" src="assets/banner.png" alt="Fantasy Olympics banner">
+      </div>
     </div>
   </header>
 
   <main class="container">
-
     <section class="card">
       <h2>Leaderboard</h2>
-      <p>
-        Total points are calculated from all medal results and bonus categories
-        as they occur throughout the Olympic Games.
-      </p>
+      <p>Total points are calculated from all medal results and bonus scoring entries.</p>
       <div id="leaderboard"></div>
     </section>
 
     <section class="card">
       <h2>Scoring Log</h2>
-      <p>
-        This table shows each medal or scoring event as it is recorded.
-      </p>
+      <p>This table lists each scoring entry as it’s recorded.</p>
       <div id="entries"></div>
     </section>
-
   </main>
 
   <footer class="footer">
     <div class="container">
-      <small>Fantasy Olympics • Scoring</small>
+      <small>
+        This is a private, non-commercial fantasy game.
+        Olympic trademarks are the property of their respective owners.
+      </small>
     </div>
   </footer>
 
-  <!-- Data + rendering scripts -->
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
