@@ -10,34 +10,43 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>Fantasy Olympics</h1>
+      <div class="brand-row">
+        <div>
+          <h1>Fantasy Olympics</h1>
+          <div class="subhead">Rules • Events • Draft • Live Scoring</div>
+        </div>
+      </div>
+
       <nav class="nav">
         <a href="index.html">Rules</a>
         <a href="events.html">Events</a>
         <a class="active" href="draft.html">Draft</a>
         <a href="scoring.html">Scoring</a>
       </nav>
+
+      <div class="banner-wrap">
+        <img class="banner-img" src="assets/banner.png" alt="Fantasy Olympics banner">
+      </div>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
       <h2>Draft Results</h2>
-      <p>
-        Below are the results of the Fantasy Olympics draft.
-        Draft selections are listed by participant in alphabetical order.
-      </p>
+      <p>Draft selections are listed by participant in alphabetical order.</p>
       <div id="draftResults"></div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <small>Fantasy Olympics • Draft Board</small>
+      <small>
+        This is a private, non-commercial fantasy game.
+        Olympic trademarks are the property of their respective owners.
+      </small>
     </div>
   </footer>
 
-  <!-- Data + rendering scripts -->
   <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
